@@ -247,3 +247,72 @@ def analyse_data_structure(data):
             return f"Person: {name}, age {age}"
         case _:
             return f"Unknown data type: {type(data)}"
+
+
+# ==============================================================================
+# TEST FUNCTIONS 
+# ==============================================================================
+
+def run_beginner_examples():
+    print("=== BEGINNER EXAMPLES ===")
+    print(check_temperature(30))
+    print(check_temperature(15))
+    print(grade_assignment(95))
+    print(grade_assignment(75))
+    print(grade_assignment(45))
+    print(check_even_odd(7))
+    print(check_even_odd(12))
+    print("\n=== MATCH/CASE EXAMPLE ===")
+    print(handle_http_status(200))
+    print(handle_http_status(418))
+    
+    print("\n=== COMPACT VERSIONS ===")
+    print(check_temperature_compact(30))
+    print(check_even_odd_compact(7))
+    print(get_pass_fail(75))
+    print(get_discount_rate(True, 70))
+    print(format_price(29.99, "GBP"))
+    print(validate_input_compact("  "))
+
+
+def run_intermediate_examples():
+    print("\n=== INTERMEDIATE EXAMPLES ===")
+    print(categorise_age(10))
+    print(categorise_age(16))
+    print(categorise_age(30))
+    print(calculate_shipping(5, 50))
+    print(calculate_shipping(15, 200, True))
+    
+    print("\n=== COMPACT INTERMEDIATE ===")
+    print(calculate_tax_compact(25000))
+    print(get_user_status_compact(3, 45))
+    print(process_grade_compact(85, 7))
+
+
+def run_advanced_examples():
+    print("\n=== ADVANCED EXAMPLES ===")
+    print(validate_password_strength("password"))
+    print(validate_password_strength("MyStr0ng!Pass"))
+    
+    print("\n=== ADVANCED COMPACT ===")
+    print(validate_email_compact("user@domain.com"))
+    print(get_priority_level_compact("admin", False, 2))
+    print(calculate_final_price_compact(100, 0.1, 0.2, True))
+    print(classify_text_length_compact("This is a medium length sentence."))
+
+
+def run_match_examples():
+    print("\n=== MATCH/CASE EXAMPLES ===")
+    print(process_command("help"))
+    print(process_command("save", "myfile.txt"))
+    print(analyse_data_structure(42))
+    print(analyse_data_structure([1, 2, 3, 4, 5, 6, 7]))
+    print(analyse_data_structure({"name": "Alice", "age": 25}))
+
+
+if __name__ == "__main__":
+    # Comment back in the later examples to run 
+    run_beginner_examples()
+    # run_intermediate_examples()
+    # run_advanced_examples()
+    # run_match_examples()
