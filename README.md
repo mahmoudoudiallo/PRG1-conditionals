@@ -1,8 +1,8 @@
 # Python Conditionals - PRIMM Learning Activities
 
-This repository contains Python code examples and activities for learning conditional statements using the **PRIMM methodology** (Predict, Run, Investigate, Modify, Make).
+Python code examples and activities for learning conditional statements using the **PRIMM methodology** (Predict, Run, Investigate, Modify, Make).
 
-## What You'll Learn
+## What we'll cover
 
 - Basic `if`, `elif`, and `else` statements
 - Comparison and logical operators
@@ -23,7 +23,7 @@ This repository contains Python code examples and activities for learning condit
 Before running any code, look at these functions and **predict** what they will output:
 
 ### Task P1: Basic Predictions
-Look at these function calls and write down what you think they'll return:
+Look at these function calls and note down what you think they'll return:
 ```python
 check_temperature(30)
 check_temperature(15)
@@ -39,7 +39,7 @@ calculate_shipping(15, 200, True)
 get_discount_rate(True, 70)
 ```
 
-**Write your predictions before moving to the next section!**
+**Note your predictions before moving to the next section!**
 
 ---
 
@@ -60,13 +60,21 @@ In the `if __name__ == "__main__":` section, uncomment these lines one by one:
 # run_match_examples()
 ```
 
-### Task R3: Interactive Testing
-Try calling functions directly in the Python REPL:
+### Task R3: Interactive Testing in VS Code
+Test functions interactively using VS Code's integrated terminal:
+
+**Method 1: Python REPL**
+1. Open VS Code terminal (`Ctrl+`` or `View > Terminal`)
+2. Type `python` to start Python REPL
+3. Import and test functions:
 ```python
 from conditionals import *
 check_even_odd(7)
 validate_password_strength("test123")
+grade_assignment(85)
 ```
+4. Type `exit()` to leave REPL
+
 
 ---
 
@@ -75,7 +83,7 @@ validate_password_strength("test123")
 Examine the code structure and understand how it works:
 
 ### Task I1: Trace Through Logic
-Pick one function from each difficulty level and trace through the execution step-by-step:
+Pick one function from your difficulty level and the one above and trace through the execution step-by-step:
 - **Beginner**: `grade_assignment(75)`
 - **Intermediate**: `categorise_age(16)`
 - **Advanced**: `validate_password_strength("MyPass123!")`
@@ -87,7 +95,7 @@ Compare these two functions that do the same thing:
 
 **Questions to investigate:**
 - Which approach is more readable?
-- Which is more concise?
+- Which is more maintainable?
 - When might you use each approach?
 
 ### Task I3: Understand Match/Case
@@ -99,7 +107,7 @@ Study the `handle_http_status()` function:
 
 ## ✏️ MODIFY Activities
 
-Make changes to existing functions to deepen your understanding:
+Make changes to existing functions to deepen your understanding. You don't have to do them all, just pick and choose. Be prepared to feed back to the group on what you've been working on.
 
 ### Task M1: Extend Basic Functions
 Modify `grade_assignment()` to include:
@@ -223,9 +231,9 @@ After completing the activities, you should be able to:
 
 1. **Start Simple**: Begin with basic `if/else` before moving to complex logic
 2. **Test Edge Cases**: Always test boundary conditions and invalid inputs
-3. **Read Aloud**: Verbalize your conditional logic to check it makes sense
+3. **Read Aloud**: Verbalise your conditional logic to check it makes sense
 4. **Use Debugger**: Step through complex conditions to understand flow
-5. **Practice Regularly**: Conditionals are fundamental - practice daily!
+5. **Practice Regularly**: Conditionals are fundamental - practice practice practice!
 
 ---
 
@@ -236,12 +244,3 @@ After completing the activities, you should be able to:
 - [Python Match/Case Documentation](https://docs.python.org/3/tutorial/controlflow.html#match-statements)
 
 ---
-
-## 📝 Notes
-
-- This code uses Python 3.8+ features (walrus operator in some examples)
-- `match/case` examples require Python 3.10+
-- All examples include both verbose and compact versions for comparison
-- Functions are organized by difficulty level for progressive learning
-
-Happy coding! 🐍
