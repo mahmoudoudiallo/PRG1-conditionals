@@ -232,8 +232,6 @@ After completing the activities, you should be able to:
 1. **Start Simple**: Begin with basic `if/else` before moving to complex logic
 2. **Test Edge Cases**: Always test boundary conditions and invalid inputs
 3. **Read Aloud**: Verbalise your conditional logic to check it makes sense
-4. **Use Debugger**: Step through complex conditions to understand flow
-5. **Practice Regularly**: Conditionals are fundamental - practice practice practice!
 
 ---
 
