@@ -60,22 +60,6 @@ In the `if __name__ == "__main__":` section, uncomment these lines one by one:
 # run_match_examples()
 ```
 
-### Task R3: Interactive Testing in VS Code
-Test functions interactively using VS Code's integrated terminal:
-
-**Method 1: Python REPL**
-1. Open VS Code terminal (`Ctrl+`` or `View > Terminal`)
-2. Type `python` to start Python REPL
-3. Import and test functions:
-```python
-from conditionals import *
-check_even_odd(7)
-validate_password_strength("test123")
-grade_assignment(85)
-```
-4. Type `exit()` to leave REPL
-
-
 ---
 
 ## 🔍 INVESTIGATE Activities
