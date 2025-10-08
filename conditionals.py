@@ -1,20 +1,39 @@
-def check_temperature(temp):
+def check_temperature():
     """Simple if/else - good for beginners to read and understand"""
-    if temp > 25:
-        return "It's warm today!"
-    else:
-        return "It's cool today!"
+    temp = None
+    while True:
+        try:
+            temp = int(input("Enter temperature: "))
+            break
+        except ValueError:
+            print("Please enter a valid number")
 
+    if temp > 30:
+        return "It's very hot today!"
+    elif temp > 25:
+        return "It's hot today!"
+    elif temp > 20:
+        return "It's warm today"
+    elif temp > 10:
+        return "It's cool today!"
+    else:
+        return "It's freezing today!"
+
+print(check_temperature())
 
 def grade_assignment(score):
+    if score >= 97:
+        return "Exquisite work! A+"
     if score >= 90:
-        return "Excellent work!"
+        return "Excellent work! A"
     elif score >= 70:
-        return "Good job!"
+        return "Good job! B"
     elif score >= 50:
-        return "You passed!"
+        return "You passed! C"
     else:
-        return "Please try again"
+        return "Please try again. F "
+    
+print(grade_assignment(75))
 
 
 def check_even_odd(number):
@@ -94,6 +113,8 @@ def categorise_age(age):
         return "Adult"
     else:
         return "Senior"
+    
+print(categorise_age(16))
 
 
 def calculate_shipping(weight, distance, is_express=False):
@@ -311,8 +332,9 @@ def run_match_examples():
 
 
 if __name__ == "__main__":
+    pass
     # Comment back in the later examples to run 
-    run_beginner_examples()
+    # run_beginner_examples()
     # run_intermediate_examples()
     # run_advanced_examples()
     # run_match_examples()
